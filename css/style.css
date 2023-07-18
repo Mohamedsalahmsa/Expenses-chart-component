@@ -1,0 +1,427 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* --------------------------- */
+/* global */
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+--Soft-red: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+
+    /* ### Neutral */
+
+--Dark-brown: hsl(25, 47%, 15%);
+--Medium-brown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-family: "DM Sans";
+    background-color: var(--Cream);
+}
+
+/* ------------------------------------------------ */
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.con .card1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 29%;
+    background-color: var(--Soft-red);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-right: 3.2%;
+}
+.con .card1 h2 {
+    color: var(--Very-pale-orange);
+    margin-top: 5%;
+}
+.con .card1 p {
+    font-size: 10px;
+    color: var(--Cream);
+}
+.con .card1 img {
+    margin-right: 1%;
+}
+.notufi {
+    display: flex;
+    justify-content: center;
+
+}
+.notufi #salary{
+    background-color: var(--Dark-brown);
+    width: auto;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    color: var(--Cream);
+    position: absolute;
+    left: 120px;
+    top: 60px;
+    display: none;
+}
+.notufi #salary2{
+    background-color: var(--Dark-brown);
+    width: auto;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    color: var(--Cream);
+    position: absolute;
+    left: 168px;
+    top: 105px;
+    display: none;
+}
+
+
+.conChart {
+    position: absolute;
+    top: 40%;
+    left: 34.2%;
+}
+.conChart .card2 {
+    position: relative;
+     background-color: var(--Very-pale-orange);
+     padding: 20px;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+     width: 127%;
+}
+.conChart .card2 h2 {
+    color: var(--Dark-brown);
+}
+
+.charts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+  
+}
+.charts .one{
+    position: absolute;
+    top: 169px;
+    left: 33px;
+    background-color: var(--Soft-red);
+    width: 37px;
+    height: 40px;
+    margin-right: 3%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    cursor: pointer;
+}
+.charts .two{
+    position: absolute;
+    top: 126px;
+    left: 80px;
+    background-color: var(--Soft-red);
+    width: 37px;
+    height: 85px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.charts .three{
+    position: absolute;
+    top: 92px;
+    left: 126px;
+    background-color: var(--Cyan);
+    width: 38px;
+    height: 120px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.charts .three:hover  {
+    background-color:  hsla(186, 34%, 60%, 0.582);
+}
+.charts .four{
+    position: absolute;
+    top: 137px;
+    left: 173px;
+    background-color: var(--Soft-red);
+    width: 37px;
+    height: 75px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.charts .four:hover {
+    background-color: hsla(10, 79%, 65%, 0.568);
+}
+.charts .five{
+    position: absolute;
+    top: 153px;
+    left: 222px;
+    background-color: var(--Soft-red);
+    width: 37px;
+    height: 60px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.charts .six{
+    position: absolute;
+    top:118px;
+    left: 270px;
+    background-color: var(--Soft-red);
+    width: 38px;
+    height: 95px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.charts .seven{
+    position: absolute;
+    top: 147px;
+    left: 320px;
+    background-color: var(--Soft-red);
+    width: 37px;
+    height: 65px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.p1 {
+   position: absolute;
+   top: 217px;
+   left: 36px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p2 {
+   position: absolute;
+   top: 217px;
+   left: 89px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p3 {
+   position: absolute;
+   top: 217px;
+   left: 131px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p4 {
+   position: absolute;
+   top: 217px;
+   left: 182px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p5 {
+   position: absolute;
+   top: 217px;
+   left: 235px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p6 {
+   position: absolute;
+   top: 217px;
+   left: 278px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+.p7 {
+   position: absolute;
+   top: 217px;
+   left: 328px;
+   color: var(--Dark-brown);
+   font-size: 14px;
+}
+hr {
+    border: 0.1px solid rgba(128, 128, 128, 0.418);
+    margin-top: 5%;
+}
+.txt {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding: 10px;
+}
+.txt .pw  p{
+    color: var(--Medium-brown);
+    font-size: 13px;
+}
+.txt .pw  h2{
+    color: var(--Dark-brown);
+    font-size: 35px;
+}
+.txt .pw2  .pp{
+    color: var(--Dark-brown);
+    font-weight: 700;
+}
+.txt .pw2  p{
+    color: var(--Medium-brown);
+    font-size: 14px;
+}
+
+/* media query */
+
+@media screen and (max-width: 480px) {
+    .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+        margin-top: 5% !important;
+    }
+    .con .card1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        width: 100% !important;
+        background-color: var(--Soft-red);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-right: 3.2%;
+    }
+
+    .conChart {
+        position: absolute;
+        top: auto !important;
+        left: auto !important;
+    }
+    .conChart .card2 {
+        position: relative;
+         background-color: var(--Very-pale-orange);
+         padding: 20px;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+         width: 127% !important;
+    }
+    .charts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30vh !important;
+      
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto ;
+        margin-top: 5% ;
+    }
+    .con .card1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        width: 50% ;
+        background-color: var(--Soft-red);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-right: 2%;
+    }
+
+    .conChart {
+        position: absolute;
+        top: auto ;
+        left: 25% ;
+        margin-top: 2%;
+    }
+    .conChart .card2 {
+        position: relative;
+         background-color: var(--Very-pale-orange);
+         padding: 20px;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+         width: 127% ;
+    }
+    .charts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30vh !important;
+      
+    }
+}
+@media screen and (max-width: 1024px){
+    .charts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 29vh ;
+        
+    }
+}
